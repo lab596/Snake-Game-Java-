@@ -1,0 +1,18 @@
+import java.awt.Dimension;
+import java.awt.Toolkit;
+import javax.swing.*;
+
+public class Boundry extends JFrame{
+  
+  public static void main(String[] args){
+    new Boundry();
+  }
+  
+  public Boundry(){
+    this.setSize(800,800);
+    
+    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    this.setTitle("Snake Game");
+    this.setVisible(true);
+  }
+}
