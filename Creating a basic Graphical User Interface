@@ -4,15 +4,12 @@ import javax.swing.*;
 
 public class Boundry extends JFrame{
   
-  public static void main(String[] args){
-    new Boundry();
-  }
-  
   public Boundry(){
+    JFrame  SGui = new JFrame();
     this.setSize(800,800);
     
-    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    this.setTitle("Snake Game");
-    this.setVisible(true);
+    SGui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    SGui.setTitle("Snake Game");
+    SGui.setVisible(true);
   }
 }
