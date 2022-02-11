@@ -3,13 +3,6 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
-//Listioners to be added in respect to each button is as follows:
-
-ListienForKeys lForKeys = new ListenForKeys();
-leftDirection.addKeyListener(lForKeys);
-rigthDirection.addKeyListener(lForKeys);
-upDirection.addKeyListener(lForKeys);
-downDirection.addKeyListener(lForKeys);
 
 //class for action based on the listeners
 
