@@ -1,24 +1,19 @@
-import java.awt.Image;
-import javax.swing.ImageIcon;
+    //Variables declared in the GamePanel class
 
-
-public class Boundry extends JPanel{ //in this class
-  final int pixelSize = 20;
-  final int allPixels = 1600;
+    static final int PIXEL_SIZE = 20;
+    static final int SCREEN_WIDTH = 800;
+    static final int SCREEN_HEIGHT = 800;
+    static final int ALL_PIXELS = (SCREEN_WIDTH*SCREEN_HEIGHT)/PIXEL_SIZE;
+    static final int DELAY = 75;
   
-  private final int x[] = new int[allPixels];
-  private final int y[] = new int[allPixels];
+    final int x[] = new int[ALL_PIXELS];
+    final int y[] = new int[ALL_PIXELS];
   
-  private int pixels;
-  private int appleXLoc;
-  private int appleYLoc;
-
-  private boolean leftDirection = false;
-  private boolean rightDirection = true;
-  private boolean upDirection = false;
-  private boolean downDirection = false;
-  private boolean inGame = true;
-
-  private Image body;
-  private Image apple;
-  private Image head;
+    int size = 6;
+    int points;
+    int appleXLoc;
+    int appleYLoc;
+    char direction = 'R';
+    boolean gameOn = false;
+    Timer timer;
+    Random random;
