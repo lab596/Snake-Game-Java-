@@ -32,3 +32,11 @@
     Timer timer;
     //random used in order to create a random x and y pos for the apple
     Random random;
+    //Variables used to make the starting screen
+    JLabel title;
+    JButton easy, medium, hard;
+    
+    TitleScreenHandler EB = new TitleScreenHandler();
+    TitleScreenHandler MB = new TitleScreenHandler();
+    TitleScreenHandler HB = new TitleScreenHandler();
+    JFrame window = new JFrame();
