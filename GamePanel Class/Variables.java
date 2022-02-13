@@ -33,10 +33,14 @@
     //random used in order to create a random x and y pos for the apple
     Random random;
     //Variables used to make the starting screen
+    //Title displayed when launching the game
     JLabel title;
+    // Buttons to select what mode to play
     JButton easy, medium, hard;
-    
+   
+    // Handlers or button action listeners to see if what button someone clicks
     TitleScreenHandler EB = new TitleScreenHandler();
     TitleScreenHandler MB = new TitleScreenHandler();
     TitleScreenHandler HB = new TitleScreenHandler();
+    // The GUI itself for the start screen
     JFrame window = new JFrame();
