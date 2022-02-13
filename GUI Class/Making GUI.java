@@ -19,5 +19,7 @@ public class GUI extends JFrame{
     this.pack();
     //Allows for user to see the GUI - Makes it come on screen
     this.setVisible(true);
+    //Opens the interface in the middle of the screen
+    this.setLocationRelativeTo(null);
   }
 }
