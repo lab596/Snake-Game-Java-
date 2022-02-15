@@ -1,3 +1,23 @@
+//Imports in class
+
+//needed to make new panels in GUI
+import javax.swing.JPanel;
+
+//basic imports
+import java.awt.event.*;
+import java.awt.*;
+import javax.swing.*;
+//allows for random location of apple
+import java.util.Random;
+
+//looks for an action to occur
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+
+
+
+
 //Variables declared in the GamePanel class
 
     //int that detirmines how big a pixel is in the game - 20 pixels in a square
