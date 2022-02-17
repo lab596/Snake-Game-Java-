@@ -33,7 +33,7 @@ public void paintComponent(Graphics g){
             }
             //makes the score at the top of the screen
             g.setColor(Color.red);
-            g.setFont(new Font("Ink Free",Font.BOLD,40));
+            g.setFont(new Font("Courier",Font.BOLD,40));
             FontMetrics metrics = getFontMetrics(g.getFont());
             g.drawString("Score: "+ points, (SCREEN_WIDTH - metrics.stringWidth("Score: "+ points))/2, g.getFont().getSize());
         }
@@ -51,12 +51,12 @@ public void gameOver(Graphics g){
         else{
         //displays score 
         g.setColor(Color.red);
-        g.setFont(new Font("Ink Free",Font.BOLD,40));
+        g.setFont(new Font("Courier",Font.BOLD,40));
         FontMetrics metrics1 = getFontMetrics(g.getFont());
         g.drawString("Score: "+ points, (SCREEN_WIDTH - metrics1.stringWidth("Score: "+ points))/2, g.getFont().getSize());
         //displays "Game Over"
         g.setColor(Color.red);
-        g.setFont(new Font("Ink Free",Font.BOLD,75));
+        g.setFont(new Font("Courier",Font.BOLD,75));
         FontMetrics metrics2 = getFontMetrics(g.getFont());
         g.drawString("Game Over", (SCREEN_WIDTH - metrics2.stringWidth("Game Over"))/2, SCREEN_HEIGHT/2);
     }
