@@ -22,20 +22,20 @@ public void paintComponent(Graphics g){
             //sets the head of the snake to a green color
             for(int i = 0; i< size; i++){
                 if(i==0){
-                    g.setColor(Color.green);
+                    g.setColor(new Color(107,142,35));
                     g.fillRect(x[i], y[i], PIXEL_SIZE, PIXEL_SIZE);
                 }
                 //sets body of the snake to a custom green color
                 else{
-                    g.setColor(new Color(45,180,0));
+                    g.setColor(new Color(0,100,0));
                     g.fillRect(x[i], y[i], PIXEL_SIZE, PIXEL_SIZE);
                 }
             }
             //makes the score at the top of the screen
-            g.setColor(Color.red);
+            g.setColor(new Color(65,105,225));
             g.setFont(new Font("Courier",Font.BOLD,40));
             FontMetrics metrics = getFontMetrics(g.getFont());
-            g.drawString("Score: "+ points, (SCREEN_WIDTH - metrics.stringWidth("Score: "+ points))/2, g.getFont().getSize());
+            g.drawString("Size: "+ points, (SCREEN_WIDTH - metrics.stringWidth("Size: "+ points))/2, g.getFont().getSize());
         }
         else{
             //calls game over method if game is off
@@ -50,14 +50,14 @@ public void gameOver(Graphics g){
         }
         else{
         //displays score 
-        g.setColor(Color.red);
+        g.setColor(new Color(65,105,225));
         g.setFont(new Font("Courier",Font.BOLD,40));
         FontMetrics metrics1 = getFontMetrics(g.getFont());
-        g.drawString("Score: "+ points, (SCREEN_WIDTH - metrics1.stringWidth("Score: "+ points))/2, g.getFont().getSize());
+        g.drawString("Size: "+ points, (SCREEN_WIDTH - metrics1.stringWidth("Size: "+ points))/2, g.getFont().getSize());
         //displays "Game Over"
         g.setColor(Color.red);
         g.setFont(new Font("Courier",Font.BOLD,75));
         FontMetrics metrics2 = getFontMetrics(g.getFont());
-        g.drawString("Game Over", (SCREEN_WIDTH - metrics2.stringWidth("Game Over"))/2, SCREEN_HEIGHT/2);
+        g.drawString("You Died.", (SCREEN_WIDTH - metrics2.stringWidth("You Died."))/2, SCREEN_HEIGHT/2);
     }
     }
