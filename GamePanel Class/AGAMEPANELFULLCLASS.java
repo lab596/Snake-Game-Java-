@@ -1,4 +1,3 @@
-
 import javax.swing.JPanel;
 
 
@@ -137,18 +136,18 @@ public class GamePanel extends JPanel implements ActionListener{
         
             for(int i = 0; i< size; i++){
                 if(i==0){
-                    g.setColor(Color.green);
+                    g.setColor(new Color(107,142,35));
                     g.fillRect(x[i], y[i], PIXEL_SIZE, PIXEL_SIZE);
                 }
                 else{
-                    g.setColor(new Color(45,180,0));
+                    g.setColor(new Color(0,100,0));
                     g.fillRect(x[i], y[i], PIXEL_SIZE, PIXEL_SIZE);
                 }
             }
-            g.setColor(Color.red);
-            g.setFont(new Font("Ink Free",Font.BOLD,40));
+            g.setColor(new Color(65,105,225));
+            g.setFont(new Font("Courier",Font.BOLD,40));
             FontMetrics metrics = getFontMetrics(g.getFont());
-            g.drawString("Score: "+ points, (SCREEN_WIDTH - metrics.stringWidth("Score: "+ points))/2, g.getFont().getSize());
+            g.drawString("Size: "+ points, (SCREEN_WIDTH - metrics.stringWidth("Size: "+ points))/2, g.getFont().getSize());
         }
         else{
             gameOver(g);
@@ -234,14 +233,14 @@ public class GamePanel extends JPanel implements ActionListener{
            g.setColor(Color.black); 
         }
         else{
-        g.setColor(Color.red);
-        g.setFont(new Font("Ink Free",Font.BOLD,40));
+        g.setColor(new Color(65,105,225));
+        g.setFont(new Font("Courier",Font.BOLD,40));
         FontMetrics metrics1 = getFontMetrics(g.getFont());
-        g.drawString("Score: "+ points, (SCREEN_WIDTH - metrics1.stringWidth("Score: "+ points))/2, g.getFont().getSize());
+        g.drawString("Size: "+ points, (SCREEN_WIDTH - metrics1.stringWidth("Size: "+ points))/2, g.getFont().getSize());
         g.setColor(Color.red);
-        g.setFont(new Font("Ink Free",Font.BOLD,75));
+        g.setFont(new Font("Courier",Font.BOLD,75));
         FontMetrics metrics2 = getFontMetrics(g.getFont());
-        g.drawString("Game Over", (SCREEN_WIDTH - metrics2.stringWidth("Game Over"))/2, SCREEN_HEIGHT/2);
+        g.drawString("You Died.", (SCREEN_WIDTH - metrics2.stringWidth("You Died."))/2, SCREEN_HEIGHT/2);
     }
     }
     @Override
