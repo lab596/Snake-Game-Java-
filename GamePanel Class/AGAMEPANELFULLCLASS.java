@@ -279,6 +279,11 @@ public class GamePanel extends JPanel implements ActionListener{
                 right = false;
                 left =false;
             }
+            if((key==KeyEvent.VK_ENTER) && (gameOn == false)){
+                GUI new1 = new GUI();
+                //GamePanel();
+                //window.setVisible(true);
+            }
             
             /*
             switch(e.getKeyCode()){
